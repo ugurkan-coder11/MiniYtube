@@ -25,6 +25,7 @@ class Engine:
     def searchMotor(self):
         try:
             try:
+                print("*Not: Arama limitini 40 dan fazla girerseniz hata alabilirsiniz.")
                 arama_limiti = int(input("Arama Limitini giriniz: "))
                 self.search = input("Arama: ")
                 self.allSearch = Search(self.search, limit = arama_limiti)
